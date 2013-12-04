@@ -1,0 +1,6 @@
+#!/system/bin/sh
+/system/xbin/busybox pkill /sbin/ric
+mount -o remount,rw /
+rm /sbin/ric
+mount -o remount,ro /
+/system/xbin/busybox pkill /sbin/ric
